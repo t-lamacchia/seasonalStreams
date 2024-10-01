@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: hotpink
 }
 
 nav {
@@ -25,14 +25,14 @@ nav a {
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  border: solid 1px #aaa;
+  border: solid 1px #000000;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: #d4770c;
 }
 
 nav a[aria-current='page'] {
-  color: #000;
+  color: black;
   background-color: #d4d4d4;
 }
 
