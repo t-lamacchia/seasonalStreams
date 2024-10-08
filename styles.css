@@ -6,18 +6,17 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: hotpink
+  background-color: whitesmoke
 }
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   padding: .5rem;
-  gap: 1.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  gap: .05rem;
+  border-bottom: solid 1px black;
+  background-color: black;
 }
 
 nav a {
@@ -39,6 +38,7 @@ nav a[aria-current='page'] {
 
 main {
   padding: 1rem;
+  
 }
 
 h1 {
@@ -61,3 +61,24 @@ h1{
   font-weight: 100;
 }
 
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3.5rem;
+  color: #2097b2
+}
+
+.Movies{
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+#Subheading{
+  font-style: italic;
+}
+
+#scaryImage{
+  display: flex;
+  justify-content: center;
+}
