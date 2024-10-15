@@ -82,3 +82,29 @@ h2{
   display: flex;
   justify-content: center;
 }
+
+.OtherPageGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+
+}
+
+#item1 {
+  padding: 1rem;
+  background-color: purple;
+  border-radius: 15px;
+}
+
+#item2 {
+  padding: 1rem;
+  background-color: purple;
+  border-radius: 15px;
+}
+
+#item3 {
+  padding: 1rem;
+  background-color: purple;
+  border-radius: 15px;
+}
