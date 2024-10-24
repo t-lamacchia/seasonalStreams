@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-image: url(Images/bubbles.jpeg) ;
+  background-image: url(Images/pexels-zhuhehuai-544917.jpg) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -105,7 +105,7 @@ h2 {
   right: 0px;
   background-color: #2097b2;
   min-width: 160px;
-  box-shadow: 0px. 8px, 16px, 0px rgba (0, 0, 0, 2);
+  box-shadow: 0px, 8px, 16px, 0px rgba (0, 0, 0, 2);
 
 
 }
