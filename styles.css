@@ -118,3 +118,15 @@ h1 {
   color: #2097b2;
   font-size: 150px;
 }
+
+h2 {
+  color: purple;
+  font-size: 100px;
+}
+
+main {
+  color: black;
+  font-size: 45px;
+  align-items: center;
+
+}
