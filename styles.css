@@ -6,7 +6,10 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: whitesmoke
+  background-image: url(Images/pexels-zhuhehuai-544917.jpg) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 nav {
@@ -38,7 +41,7 @@ nav a[aria-current='page'] {
 
 main {
   padding: 1rem;
-  
+
 }
 
 h1 {
@@ -46,39 +49,84 @@ h1 {
   font-size: 3rem;
 }
 
-p{
+p {
   font-size: 2.3rem;
   font-family: fantasy;
 }
 
-ul{
+ul {
   font-size: 1.2rem;
 }
 
-h1{
+h1 {
   font-family: fantasy;
   font-size: 3.5rem;
   font-weight: 100;
 }
 
-h2{
+h2 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3.5rem;
   color: #2097b2
 }
 
-.Movies{
+.Movies {
   display: flex;
   flex-direction: column;
 
-  
+
 }
 
-#Subheading{
+#Subheading {
   font-style: italic;
 }
 
-#scaryImage{
+#scaryImage {
   display: flex;
   justify-content: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #000000;
+  color: fuchsia;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #2097b2;
+  min-width: 160px;
+  box-shadow: 0px, 8px, 16px, 0px rgba (0, 0, 0, 2);
+
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+  color: #2097b2;
+  font-size: 150px;
+}
+
+h2 {
+  color: purple;
+  font-size: 100px;
+}
+
+main {
+  color: black;
+  font-size: 45px;
+  align-items: center;
+
 }
