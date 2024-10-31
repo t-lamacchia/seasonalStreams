@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-image: url(Images/pexels-zhuhehuai-544917.jpg) ;
+  background-image: url(Images/pexels-adrien-olichon-1257089-2387793.jpg) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -67,7 +67,7 @@ h1 {
 h2 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3.5rem;
-  color: #2097b2
+  color: #800000 
 }
 
 .Movies {
@@ -103,9 +103,10 @@ h2 {
   display: none;
   position: absolute;
   right: 0px;
-  background-color: #2097b2;
+  /* background-color: #800000; */
   min-width: 160px;
   box-shadow: 0px, 8px, 16px, 0px rgba (0, 0, 0, 2);
+  /* padding: 12px 16px; */
 
 
 }
@@ -115,7 +116,7 @@ h2 {
 }
 
 h1 {
-  color: #2097b2;
+  color: #800000;
   font-size: 150px;
 }
 
