@@ -1,7 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Christmas</title>
-    </head>
-    <body></body>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<h1>Give me Feedback</h1>
+
+<body>
+    <form class="form">
+        <label>
+            Email: <input type="text" name="email" id="email">
+        </label>
+        <label>
+            Opt in for email pop-ups: <input type="checkbox">
+        </label>
+        <label>
+            More you want to see: <textarea style="width: 80;" rows=1></textarea>
+        </label>
+
+        <input type="submit" style="width: 20%;" onclick="formsubmission()" />
+       
+        <!-- <input type="checkbox" id="option1" name="option1" value="Netflix">
+        <label for="option1"> Netflix</label><br>
+            <checkbox name="Favortite streaming services">
+                <option value="Netflix">Netflix</option>
+                <option value="Hulu">Hulu</option>
+                <option value="Amazon Prime">Amazon Prime</option>
+            </select>/ -->
+
+
+    </form>
+    <script>
+        function formsubmission() {
+            alert("The form was successfully submitted!")
+        }
+
+    </script>
+</body>
+
 </html>
