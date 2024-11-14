@@ -4,8 +4,26 @@
 <head>
     <title>Form</title>
     <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="script.js"></script>
+        <script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<h1>Give me Feedback</h1>
+<nav>
+    <h1>Give me Feedback</h1>
+    <div class="dropdown">
+        <button class="dropdown-button">
+          <i class="fa-solid fa-bars fa-xl" style="color: #800000;"></i>
+        </button>
+        <div class="dropdown-content">
+          <a style="background-color: white;" href="/" aria-current="page">Home</a>
+          <a style="background-color: white;" href="/page2.html">Halloween</a>
+          <a style="background-color: white;" href="Christmas.html">Christmas</a>
+          <a style="background-color: white;" href="Fillpage.html"> Recomend page</a>
+        </div>
+      </div>
+</nav>
+
+
 
 <body>
     <form class="form">
@@ -28,7 +46,7 @@
             <option value="HBO Max">HBO Max</option>
         </select>
 
-        <input type="submit" style="width: 20%;" onclick="formsubmission()" />
+        <button id="SubmitButton" style="width: 20%;" onclick="formsubmission()">Submit</button>
 
 
 
@@ -36,7 +54,8 @@
     </form>
     <script>
         function formsubmission() {
-            alert("The form was successfully submitted!")
+            // alert("The form was successfully submitted!")
+            alert(`You clicked ${document.getElementById("SubmitButton").textContent}`)
         }
 
     </script>

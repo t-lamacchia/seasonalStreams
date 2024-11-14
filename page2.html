@@ -4,6 +4,9 @@
 <head>
 
   <title>Spookey Favorites</title>
+  <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="script.js"></script>
+        <script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles.css" />
@@ -17,15 +20,22 @@
       color: #F97300
     }
   </style>
-  <div style="background-color:#ff8633; color:purple">
-
-    <nav style="background-color:black">
-      <a style="background-color: white;" href="/">Home</a>
-      <a style="background-color: white;" href="/page2.html" aria-current="page">Halloween</a>
-      <a style="background-color: white;" href="/page3.html">Christmas</a>
-    </nav>
+   <nav>
+    <h1>Halloween Favorites</h1>
+    <div class="dropdown">
+        <button class="dropdown-button">
+          <i class="fa-solid fa-bars fa-xl" style="color: #800000;"></i>
+        </button>
+        <div class="dropdown-content">
+          <a style="background-color: white;" href="/" aria-current="page">Home</a>
+          <a style="background-color: white;" href="/page2.html">Halloween</a>
+          <a style="background-color: white;" href="Christmas.html">Christmas</a>
+          <a style="background-color: white;" href="Fillpage.html"> Recomend page</a>
+        </div>
+      </div>
+</nav>
     <main>
-      <h2>Halloween Favorites</h2>
+  
       <div id="scaryImage">
         <img src="Images/scary.png" height="300">
       </div>
