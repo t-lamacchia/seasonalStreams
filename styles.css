@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
+  color: white;
   background-image: url(Images/pexels-adrien-olichon-1257089-2387793.jpg) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -126,8 +126,14 @@ h2 {
 }
 
 main {
-  color: black;
+  color: white;
   font-size: 45px;
   align-items: center;
 
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
 }

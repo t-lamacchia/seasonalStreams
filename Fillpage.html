@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Christmas</title>
-    </head>
-    <body></body>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="script.js"></script>
+        <script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<nav>
+    <h1>Give me Feedback</h1>
+    <div class="dropdown">
+        <button class="dropdown-button">
+          <i class="fa-solid fa-bars fa-xl" style="color: #800000;"></i>
+        </button>
+        <div class="dropdown-content">
+          <a style="background-color: white;" href="/" aria-current="page">Home</a>
+          <a style="background-color: white;" href="/page2.html">Halloween</a>
+          <a style="background-color: white;" href="Christmas.html">Christmas</a>
+          <a style="background-color: white;" href="Fillpage.html"> Recomend page</a>
+        </div>
+      </div>
+</nav>
+
+
+
+<body>
+    <form class="form">
+        <label>
+            Email: <input type="text" name="email" id="email">
+        </label>
+        <label>
+            Opt in for email pop-ups: <input type="checkbox">
+        </label>
+        <label>
+            More you want to see: <textarea style="width: 80;" rows=1></textarea>
+        </label>
+
+        <label for="servicesS">What streaming servise do you like?</label>
+
+        <select name="services" id="What services do you like? ">
+            <option value="Netflix">Netflix</option>
+            <option value="Amazon Prime">Amazon Prime</option>
+            <option value="Hulu">Hulu</option>
+            <option value="HBO Max">HBO Max</option>
+        </select>
+
+        <button id="SubmitButton" style="width: 20%;" onclick="formsubmission()">Submit</button>
+
+
+
+
+    </form>
+    <script>
+        function formsubmission() {
+            // alert("The form was successfully submitted!")
+            alert(`You clicked ${document.getElementById("SubmitButton").textContent}`)
+        }
+
+    </script>
+</body>
+
 </html>
