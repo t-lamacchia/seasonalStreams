@@ -46,14 +46,47 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <!-- <tr>
       <td>Grinch</td>
       <td>PG</td>
       <td>1h 45m</td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>
 
+<script>
+  const Movies =[
+    {
+      Movie: "Grinch",
+      Rating: "PG",
+      Duration: "1h 45m",
+    },{
+      Movie: "ELF",
+      Rating: "PG",
+      Duration: "1h 30m",
+    }
+  ];
+  console.log(Movies);
+
+  const writeTableRow = (table, Movies) => {
+    const newRow = table.insertRow();
+
+    newRow.innerHTML = `<tr id=${Movies.name}>
+      <td>${Movies.Movie}</td>
+      <td>${Movies.Rating}</td>
+      <td>${Movies.Duration}</td>
+      </tr>`;
+  }
+  const makeTable = () => {
+    const tableBody = document.getElementsByTagName("tbody")[0];
+    Movies.forEach ((row) => {
+      writeTableRow(tableBody, row);
+    })
+  }
+  makeTable()
+ 
+
+</script>
 
 
 </html>
