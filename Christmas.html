@@ -24,69 +24,97 @@
 
 <body>
 </body>
-<select name="services" id="What services do you like? ">
-  <option value="Netflix">Netflix</option>
-  <option value="Amazon Prime">Amazon Prime</option>
-  <option value="Hulu">Hulu</option>
-  <option value="HBO Max">HBO Max</option>
-</select>
+<!-- <div>
+  <select id="Movies" onchange="makeTable()"></select>
+</div>
 
 <script>
-  const myArr = [1, 2, 3, 4]
-  myArr.forEach((i) => {
-    console.log(i) // will print out values one by one
+  const  MovieNames = ["all","Movie", "Rating", "Duration"];
+  const select = document.getElementById("Movies");
+  MovieNames.forEach((type) => {
+    option = document.createElement("option");
+    option.value= type;
+    option.text = type;
+    select.appendChild(option);
   })
-</script>
-<table id="table">
-  <thead>
-    <tr>
-      <td><b>Movie</b></td>
-      <td><b>Rating</b></td>
-      <td><b>duration</b></td>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- <tr>
+</script> -->
+<form class="form">
+  <label for="services"> Select a rating:</label>
+  <select name="Rating" id="rating">
+    <option value="ALL">ALL</option>
+    <option value="PG">PG</option>
+    <option value="PG-13">PG-13</option>
+    <option value="R">R</option>
+  </select>
+
+
+  <script>
+    const myArr = [1, 2, 3, 4]
+    myArr.forEach((i) => {
+      console.log(i) // will print out values one by one
+    })
+  </script>
+  <table id="table">
+    <thead>
+      <tr>
+        <td><b>Movie</b></td>
+        <td><b>Rating</b></td>
+        <td><b>duration</b></td>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr>
       <td>Grinch</td>
       <td>PG</td>
       <td>1h 45m</td>
     </tr> -->
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<script>
-  const Movies =[
-    {
-      Movie: "Grinch",
-      Rating: "PG",
-      Duration: "1h 45m",
-    },{
-      Movie: "ELF",
-      Rating: "PG",
-      Duration: "1h 30m",
-    }
-  ];
-  console.log(Movies);
+  <script>
+    const Movies = [
+      {
+        Movie: "Grinch",
+        Rating: "PG",
+        Duration: "1h 45m",
+      }, {
+        Movie: "ELF",
+        Rating: "PG",
+        Duration: "1h 30m",
+      }, {
+        Movie: "Krampus",
+        Rating: "PG-13",
+        Duration: "1h 38m"
+      }
+    ];
+    console.log(Movies);
 
-  const writeTableRow = (table, Movies) => {
-    const newRow = table.insertRow();
+    const writeTableRow = (table, Movies) => {
+      const newRow = table.insertRow();
 
-    newRow.innerHTML = `<tr id=${Movies.name}>
+      newRow.innerHTML = `<tr id=${Movies.name}>
       <td>${Movies.Movie}</td>
       <td>${Movies.Rating}</td>
       <td>${Movies.Duration}</td>
       </tr>`;
-  }
-  const makeTable = () => {
-    const tableBody = document.getElementsByTagName("tbody")[0];
-    Movies.forEach ((row) => {
-      writeTableRow(tableBody, row);
-    })
-  }
-  makeTable()
- 
+    }
+    const select= document.getElementById("rating")
+    const makeTable = () => {
+      const tableBody = document.getElementsByTagName("tbody")[0];
+      tableBody.innerHTML = "";
+      if (select.value == "ALL") {
+        Movies.forEach((r) => writeTableRow(tableBody, r));
+      } else {
+        const filtered = Movies.filter((r) => select.value == r.rating)
+        filtered.forEach((r) => writeTableRow(tableBody, r))
+        console.log(filtered);
+      }
+    
+    }
+    makeTable()
 
-</script>
+
+  </script>
 
 
 </html>
