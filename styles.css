@@ -137,3 +137,12 @@ main {
   gap: 2rem;
   padding: 5rem;
 }
+
+table{
+  padding: 2rem;
+  border-spacing: 1rem;
+}
+
+td{
+  padding: 1rem;
+}
