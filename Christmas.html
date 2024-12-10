@@ -8,16 +8,16 @@
   <script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
 </head>
 <nav>
-  <h1>Christmas Favorites</h1>
+  <h2>Christmas Favorites</h2>
   <div class="dropdown">
     <button class="dropdown-button">
-      <i class="fa-solid fa-bars fa-xl" style="color: #800000;"></i>
+      <i class="fa-solid fa-bars fa-xl" style="color: #e2e2e2;"></i>
     </button>
     <div class="dropdown-content">
       <a style="background-color: white;" href="/" aria-current="page">Home</a>
       <a style="background-color: white;" href="/page2.html">Halloween</a>
       <a style="background-color: white;" href="Christmas.html">Christmas</a>
-      <a style="background-color: white;" href="Fillpage.html"> Recomend page</a>
+      <a style="background-color: white;" href="Fillpage.html"> Feedback</a>
     </div>
   </div>
 </nav>
@@ -40,7 +40,7 @@
 </script> -->
 <form class="form">
   <label for="services"> Select a rating:</label>
-  <select name="Rating" id="rating">
+  <select name="Rating" id="ratingselector" onchange="makeTable()">
     <option value="ALL">ALL</option>
     <option value="PG">PG</option>
     <option value="PG-13">PG-13</option>
@@ -98,14 +98,14 @@
       <td>${Movies.Duration}</td>
       </tr>`;
     }
-    const select= document.getElementById("rating")
+    const select= document.getElementById("ratingselector")
     const makeTable = () => {
       const tableBody = document.getElementsByTagName("tbody")[0];
       tableBody.innerHTML = "";
       if (select.value == "ALL") {
         Movies.forEach((r) => writeTableRow(tableBody, r));
       } else {
-        const filtered = Movies.filter((r) => select.value == r.rating)
+        const filtered = Movies.filter((r) => select.value == r.Rating)
         filtered.forEach((r) => writeTableRow(tableBody, r))
         console.log(filtered);
       }
