@@ -6,10 +6,10 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: white;
-  background-image: url(Images/pexels-adrien-olichon-1257089-2387793.jpg) ;
+  /* background-image: url(Images/pexels-adrien-olichon-1257089-2387793.jpg) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
 }
 
 nav {
@@ -125,7 +125,7 @@ h1 {
 
 
 main {
-  color: white;
+  color: black;
   font-size: 45px;
   align-items: center;
 
@@ -155,5 +155,16 @@ h2 {
 h3 {
   color: rgb(231, 67, 7);
   font-size: 150px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-container{
+  padding: 15rem;
+  font-size: 100px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
