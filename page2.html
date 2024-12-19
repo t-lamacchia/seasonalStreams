@@ -4,13 +4,16 @@
 <head>
 
   <title>Spookey Favorites</title>
-  <link rel="stylesheet" href="styles.css" />
-        <script type="module" src="script.js"></script>
-        <script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="module" src="script.js"></script>
+
+<body style="background-image: url('Images/halloween.png'); background-size: cover; background-position: center;">
+</body>
+<link rel="stylesheet" href="styles.css" />
+<script type="module" src="script.js"></script>
+<script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="styles.css" />
+<script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -20,31 +23,31 @@
       color: #F97300
     }
   </style>
-   <nav>
+  <nav>
     <h3>Halloween Favorites</h3>
     <div class="dropdown">
-        <button class="dropdown-button">
-          <i class="fa-solid fa-bars fa-xl" style="color: #e2e2e2;"></i>
-        </button>
-        <div class="dropdown-content">
-          <a style="background-color: white;" href="/" aria-current="page">Home</a>
-          <a style="background-color: white;" href="/page2.html">Halloween</a>
-          <a style="background-color: white;" href="Christmas.html">Christmas</a>
-          <a style="background-color: white;" href="Fillpage.html"> Feedback</a>
-        </div>
+      <button class="dropdown-button">
+        <i class="fa-solid fa-bars fa-xl" style="color: #e2e2e2;"></i>
+      </button>
+      <div class="dropdown-content">
+        <a style="background-color: white;" href="/" aria-current="page">Home</a>
+        <a style="background-color: white;" href="/page2.html">Halloween</a>
+        <a style="background-color: white;" href="Christmas.html">Christmas</a>
+        <a style="background-color: white;" href="Fillpage.html"> Feedback</a>
       </div>
-</nav>
-    <main>
-<!--   
+    </div>
+  </nav>
+  <main>
+    <!--   
       <div id="scaryImage">
         <img src="Images/scary.png" height="300">
       </div> -->
-      <!-- <iframe width="200" height="200" src="https://www.youtube.com/embed/uObK3hS0has?si=D0boGkBMnS4hHJsu"
+    <!-- <iframe width="200" height="200" src="https://www.youtube.com/embed/uObK3hS0has?si=D0boGkBMnS4hHJsu"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-      <div id="Subheading"><b>Here you can find Halloween favorites for the whole family!</b></div>
-      <!-- <div class="Movies">
+    <div id="Subheading"><b>Here you can find Halloween favorites for the whole family!</b></div>
+    <!-- <div class="Movies">
         <p>These are Scary favorites that will give you a scare....</p>
         <ul>
           <li>The Conjuring</li>
@@ -75,7 +78,7 @@
       </div> -->
 
 
-      <!-- <p>Places to find these movies</p>
+    <!-- <p>Places to find these movies</p>
       <div>
         <ul>
           <li><a href="https://www.netflix.com">Netflix</a></li>
@@ -89,84 +92,126 @@
 
 
 
-<form class="form">
-  <label for="services"> Select a rating:</label>
-  <select name="Rating" id="ratingselector" onchange="makeTable()">
-    <option value="ALL">ALL</option>
-    <option value="PG">PG</option>
-    <option value="PG-13">PG-13</option>
-    <option value="R">R</option>
-  </select>
-  </form>
+    <form class="form">
+      <label for="services"> Select a rating:</label>
+      <select name="Rating" id="ratingselector" onchange="makeTable()">
+        <option value="ALL">ALL</option>
+        <option value="PG">PG</option>
+        <option value="PG-13">PG-13</option>
+        <option value="R">R</option>
+      </select>
+    </form>
 
 
-  <script>
-    const myArr = [1, 2, 3, 4]
-    myArr.forEach((i) => {
-      console.log(i) // will print out values one by one
-    })
-  </script>
-  <table id="table">
-    <thead>
-      <tr>
-        <td><b>Movie</b></td>
-        <td><b>Rating</b></td>
-        <td><b>duration</b></td>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- <tr>
+    <script>
+      const myArr = [1, 2, 3, 4]
+      myArr.forEach((i) => {
+        console.log(i) // will print out values one by one
+      })
+    </script>
+    <table id="table">
+      <thead>
+        <tr>
+          <td><b>Movie</b></td>
+          <td><b>Rating</b></td>
+          <td><b>duration</b></td>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr>
       <td>Grinch</td>
       <td>PG</td>
       <td>1h 45m</td>
     </tr> -->
-    </tbody>
-  </table>
+      </tbody>
+    </table>
 
-  <script>
-    const Movies = [
-      {
-        Movie: "Grinch",
-        Rating: "PG",
-        Duration: "1h 45m",
-      }, {
-        Movie: "ELF",
-        Rating: "PG",
-        Duration: "1h 30m",
-      }, {
-        Movie: "Krampus",
-        Rating: "PG-13",
-        Duration: "1h 38m"
-      }
-    ];
-    console.log(Movies);
+    <script>
+      const Movies = [
+        {
+          Movie: "Casper",
+          Rating: "PG",
+          Duration: "1h 40m",
+        }, {
+          Movie: "The Nightmare Before Christmas ",
+          Rating: "PG",
+          Duration: "1h 16m",
+        }, {
+          Movie: "Corpse Bride",
+          Rating: "PG",
+          Duration: "1h 17m"
+        }, {
+          Movie: "Ghost Busters",
+          Rating: "PG",
+          Duration: "1h 45m",
+        }, {
+          Movie: "Beetlejuice",
+          Rating: "PG-13",
+          Duration: "1h 32m",
+        }, {
+          Movie: "The Addams Family",
+          Rating: "PG-13",
+          Duration: "1h 39m",
+        }, {
+          Movie: "M3GAN",
+          Rating: "PG-13",
+          Duration: "1h 42m",
+        }, {
+          Movie: "A Quiet Place",
+          Rating: "PG-13",
+          Duration: "1h 30m",
+        },
+        {
+          Movie: "Scary Stories to Tell in The Dark",
+          Rating: "PG-13",
+          Duration: "1h 48m",
+        }, {
+          Movie: "Thanksgiving ",
+          Rating: "R",
+          Duration: "1h 47m",
+        }, {
+          Movie: "All Halows Eve ",
+          Rating: "R",
+          Duration: "1h 23m",
+        }, {
+          Movie: "Terrifier",
+          Rating: "R",
+          Duration: "1h 25m",
+        }, {
+          Movie: "Halloween",
+          Rating: "R",
+          Duration: "1h 31m",
+        }
 
-    const writeTableRow = (table, Movies) => {
-      const newRow = table.insertRow();
+      ];
+      console.log(Movies);
 
-      newRow.innerHTML = `<tr id=${Movies.name}>
+      const writeTableRow = (table, Movies) => {
+        const newRow = table.insertRow();
+
+        newRow.innerHTML = `<tr id=${Movies.name}>
       <td>${Movies.Movie}</td>
       <td>${Movies.Rating}</td>
       <td>${Movies.Duration}</td>
       </tr>`;
-    }
-    const select= document.getElementById("ratingselector")
-    const makeTable = () => {
-      const tableBody = document.getElementsByTagName("tbody")[0];
-      tableBody.innerHTML = "";
-      if (select.value == "ALL") {
-        Movies.forEach((r) => writeTableRow(tableBody, r));
-      } else {
-        const filtered = Movies.filter((r) => select.value == r.Rating)
-        filtered.forEach((r) => writeTableRow(tableBody, r))
-        console.log(filtered);
       }
-    
-    }
-    makeTable()
+      const select = document.getElementById("ratingselector")
+      const makeTable = () => {
+        const tableBody = document.getElementsByTagName("tbody")[0];
+        tableBody.innerHTML = "";
+        if (select.value == "ALL") {
+          Movies.forEach((r) => writeTableRow(tableBody, r));
+        } else {
+          const filtered = Movies.filter((r) => select.value == r.Rating)
+          filtered.forEach((r) => writeTableRow(tableBody, r))
+          console.log(filtered);
+        }
+
+      }
+      makeTable()
 
 
-  </script>
+    </script>
 
 
 </html>

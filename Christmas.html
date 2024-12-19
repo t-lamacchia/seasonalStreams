@@ -6,26 +6,30 @@
   <link rel="stylesheet" href="styles.css" />
   <script type="module" src="script.js"></script>
   <script src="https://kit.fontawesome.com/300b342108.js" crossorigin="anonymous"></script>
-</head>
-<nav>
-  <h2>Christmas Favorites</h2>
-  <div class="dropdown">
-    <button class="dropdown-button">
-      <i class="fa-solid fa-bars fa-xl" style="color: #e2e2e2;"></i>
-    </button>
-    <div class="dropdown-content">
-      <a style="background-color: white;" href="/" aria-current="page">Home</a>
-      <a style="background-color: white;" href="/page2.html">Halloween</a>
-      <a style="background-color: white;" href="Christmas.html">Christmas</a>
-      <a style="background-color: white;" href="Fillpage.html"> Feedback</a>
+
+<body style="background-image: url('Images/Holiday.png'); background-size: cover; background-position: center;">
+
+  </head>
+  <nav>
+    <h2>Christmas Favorites</h2>
+    <div class="dropdown">
+      <button class="dropdown-button">
+        <i class="fa-solid fa-bars fa-xl" style="color: #e2e2e2;"></i>
+      </button>
+      <div class="dropdown-content">
+        <a style="background-color: white;" href="/" aria-current="page">Home</a>
+        <a style="background-color: white;" href="/page2.html">Halloween</a>
+        <a style="background-color: white;" href="Christmas.html">Christmas</a>
+        <a style="background-color: white;" href="Fillpage.html"> Feedback</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-<body>
-</body>
-<!-- <div>
+  <body>
+    <h6 id="Subheading"><b>Here you can find Christmas favorites for the whole family!</b></h6>
+  </body>
+  <!-- <div>
   <select id="Movies" onchange="makeTable()"></select>
 </div>
 
@@ -39,14 +43,14 @@
     select.appendChild(option);
   })
 </script> -->
-<form class="form">
-  <label for="services"> Select a rating:</label>
-  <select name="Rating" id="ratingselector" onchange="makeTable()">
-    <option value="ALL">ALL</option>
-    <option value="PG">PG</option>
-    <option value="PG-13">PG-13</option>
-    <option value="R">R</option>
-  </select>
+  <form class="form">
+    <label for="services"> Select a rating:</label>
+    <select name="Rating" id="ratingselector" onchange="makeTable()">
+      <option value="ALL">ALL</option>
+      <option value="PG">PG</option>
+      <option value="PG-13">PG-13</option>
+      <option value="R">R</option>
+    </select>
   </form>
 
 
@@ -76,7 +80,7 @@
   <script>
     const Movies = [
       {
-        Movie: "Grinch",
+        Movie: "How the Grinch Stole Christmas",
         Rating: "PG",
         Duration: "1h 45m",
       }, {
@@ -87,6 +91,38 @@
         Movie: "Krampus",
         Rating: "PG-13",
         Duration: "1h 38m"
+      }, {
+        Movie: "Christmas With the Kranks",
+        Rating: "PG",
+        Duration: "1h 34m"
+      }, {
+        Movie: "The Christmas Chronicals  ",
+        Rating: "PG",
+        Duration: "1h 43m"
+      }, {
+        Movie: "Four Christmases",
+        Rating: "PG-13",
+        Duration: "1h 28m"
+      }, {
+        Movie: "National Lampoon's Christmas Vacation",
+        Rating: "PG-13",
+        Duration: "1h 37m"
+      }, {
+        Movie: "Daddy's Home 2",
+        Rating: "PG-13",
+        Duration: "1h 40m"
+      }, {
+        Movie: "Violent Night",
+        Rating: "R",
+        Duration: "1h 52m"
+      }, {
+        Movie: "Bad Mom's Christmas",
+        Rating: "R",
+        Duration: "1h 44m"
+      }, {
+        Movie: "The Night Before",
+        Rating: "R",
+        Duration: "1h 41m"
       }
     ];
     console.log(Movies);
@@ -100,7 +136,7 @@
       <td>${Movies.Duration}</td>
       </tr>`;
     }
-    const select= document.getElementById("ratingselector")
+    const select = document.getElementById("ratingselector")
     const makeTable = () => {
       const tableBody = document.getElementsByTagName("tbody")[0];
       tableBody.innerHTML = "";
@@ -111,7 +147,7 @@
         filtered.forEach((r) => writeTableRow(tableBody, r))
         console.log(filtered);
       }
-    
+
     }
     makeTable()
 

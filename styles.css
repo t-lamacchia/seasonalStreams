@@ -162,11 +162,16 @@ h3 {
 .container{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
  
 }
 
 .inner-container{
-  padding: 10rem;
+  display: flex;
+  padding: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 100px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white ;
@@ -174,4 +179,19 @@ h3 {
 
 table {
   color: white;
+  font-size: medium;
+}
+
+
+h5 {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .5rem;
+}
+
+h6 {
+font-size: 3rem;
 }
